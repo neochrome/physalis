@@ -1,6 +1,7 @@
 {
 	"name": "neochrome/physalis",
 	"type": "library",
+	"license": "public domain",
 	"description": "An effort to make testing PHP code easy and fun",
 	"keywords": ["test", "testing", "framework", "spec", "bdd", "tdd", "cli"],
 	"homepage": "https://github.com/neochrome/physalis",
