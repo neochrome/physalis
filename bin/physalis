@@ -1,0 +1,50 @@
+#!/usr/bin/env php
+<?php
+namespace Physalis;
+error_reporting(E_ALL);
+require_once __DIR__.'/../version.php';
+require_once __DIR__.'/../src/Env.php';
+require_once __DIR__.'/../src/syntax.php';
+
+$options = getopt(
+	'V', [
+	'help',
+	'version',
+	'specs:',
+	'reporter:'
+]);
+if (isset($options['V']) || isset($options['version'])) displayVersion();
+if (isset($options['help'])) displayHelp();
+$specs = isset($options['specs']) ? $options['specs'] : ['./specs/*.spec.php'];
+$reporter = isset($options['reporter']) ? $options['reporter'] : 'ProgressReporter';
+$reporter = is_array($reporter) ? $reporter[0] : $reporter;
+
+$allPassed = Env::getInstance()->run(['specs' => $specs, 'reporter' => $reporter]);
+$allPassed
+	?	exit(0)
+	:	exit(1);
+
+function displayVersion () {
+	global $VERSION;
+	echo "Physalis {$VERSION}\n";
+	exit(0);
+}
+function displayHelp () {
+	echo <<<HELP
+Usage:
+physalis [OPTION]
+
+Options:
+     --specs=GLOB         include and execute spec files matching GLOB pattern,
+                          may be specified multiple times. Defaults to ./specs/*.spec.php
+     --reporter=REPORTER  use REPORTER to display results. Defaults to ProgressReporter.
+     --help               display this help and exit.
+ -V, --version            display version information and exit.
+
+Example usage:
+$ physalis --specs=my/specs/*.php
+
+HELP;
+	exit(0);
+}
+?>

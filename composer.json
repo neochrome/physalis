@@ -1,0 +1,27 @@
+{
+	"name": "neochrome/physalis",
+	"type": "library",
+	"description": "An effort to make testing PHP code easy and fun",
+	"keywords": ["test", "testing", "framework", "spec", "bdd", "tdd", "cli"],
+	"homepage": "https://github.com/neochrome/physalis",
+	"authors": [
+		{ 
+			"name": "Johan Stenqvist",
+			"email": "johan@stenqvist.net",
+			"role": "developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/neochrome/physalis/issues",
+		"source": "https://github.com/neochrome/physalis"
+	},
+	"require": {
+		"php": ">=5.3.0" 
+	},
+	"bin":["bin/physalis"],
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.1.x-dev"
+		}
+	}
+}
