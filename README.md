@@ -6,6 +6,10 @@ when using the excellent [Jasmine](https://github.com/pivotal/jasmine), from whi
 syntax and general usage is shamelessly borrowed.
 
 
+## System Requirements
+Physalis requires PHP 5.4.x or later to run due to the heavy use of function closures.
+
+
 ## Installation
 ### Using Composer
 Using [composer](http://getcomposer.org) is probably the easiest way. Just execute the
