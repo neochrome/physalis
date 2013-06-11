@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/neochrome/physalis.png?branch=master)](https://travis-ci.org/neochrome/physalis)
+
 # Physalis
 An effort to make testing PHP code as easy and fun as its JavaScript equivalent
 when using the excellent [Jasmine](https://github.com/pivotal/jasmine), from which
