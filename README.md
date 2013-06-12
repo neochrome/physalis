@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/neochrome/physalis.png?branch=master)](https://travis-ci.org/neochrome/physalis)
+[![Build Status](https://travis-ci.org/neochrome/physalis.png?branch=master)](https://travis-ci.org/neochrome/physalis)  
+[![endorse](https://api.coderwall.com/neochrome/endorsecount.png)](https://coderwall.com/neochrome)
 
 # Physalis
 An effort to make testing PHP code as easy and fun as its JavaScript equivalent
