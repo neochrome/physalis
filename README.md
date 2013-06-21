@@ -126,8 +126,8 @@ expect('42')->toBe(42); // false
 #### toEqual
 Performs a "loose" comparison of actual and expected.
 ```php
-expect(42)->toBe(42);   // true
-expect('42')->toBe(42); // true
+expect(42)->toEqual(42);   // true
+expect('42')->toEqual(42); // true
 ```
 #### toMatch
 Assumes expected to be a perl regular expression and tests if actual is a match.
