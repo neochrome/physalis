@@ -114,7 +114,7 @@ it('is negated', function () {
 ```
 
 ### Matchers
-Matchers performs boolean comparisions of actual and expected values.
+Matchers performs boolean comparisons of actual and expected values.
 Included matchers are:
 
 #### toBe
